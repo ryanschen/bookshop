@@ -1,0 +1,46 @@
+.navbar-header .active{
+	color:#FFFFFF;//当处于导航链接到的页面时该导航菜单颜色变成白色
+}
+
+		
+#booksfilter li
+{
+padding:5px;
+list-style-type:none;
+float:left;
+padding:0px;
+}
+#booksfilter span
+{
+margin-left:5px;
+margin-right:5px;
+}
+
+#booksfilter a
+{
+    padding:5px;
+    text-decoration:none;
+}
+#booksfilter a.cur,#booksfilter a:hover
+{
+    background-color:#e67e22;
+    color:white;
+    border-radius:5px;
+}
+
+	
+		
+#bookclass a
+{
+	display:block;
+	background-color:#f5f5f5;
+	text-align:center;
+	padding:2px 5px;
+	float:left;
+	margin:2px 2px;
+       text-decoration:none;
+}
+#bookclass a:hover
+{
+	background-color:#e8e8e8;
+}
