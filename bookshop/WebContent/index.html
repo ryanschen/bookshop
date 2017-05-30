@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.css" rel="stylesheet">
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	 <style type="text/css">  
+	 	a:hover{
+			cursor: pointer;
+	 	}
+       .open{
+			display: block;
+       }
+    </style> 
+	 <style type="text/css">
+  .dropdown-submenu {
+   position: relative;
+  }
+ 
+   .dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+   }
+ 
+   .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+   }
+ 
+   .dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+   }
+  .dropdown-submenu1 > a:after {
+     display: block;
+   /*  content: " "; */
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+   }
+ 
+   .dropdown-submenu:hover > a:after {
+    border-left-color: black;
+   }
+ 
+   .dropdown-submenu.pull-left {
+    float: none;
+   }
+ 
+    .dropdown-submenu.pull-left > .dropdown-menu {
+     left: -100%;
+     margin-left: 10px;
+     -webkit-border-radius: 6px 0 6px 6px;
+     -moz-border-radius: 6px 0 6px 6px;
+     border-radius: 6px 0 6px 6px;
+    }
+ </style>
+   
+
+</head>
+<body>
+	<nav class="navbar navbar-default" style="margin-bottom:0px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown" id="menu-li-1">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">前台<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-2">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">预订<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-3">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">宾客<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-4">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">客户关系<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-5">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">当班<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-6">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账务<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-7">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">库存<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-8">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">报表<span class="caret"></span></a>
+        </li>
+        <li class="dropdown" id="menu-li-9">
+          <a  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">设置<span class="caret"></span></a>
+            
+        </li>
+      </ul>
+    
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="tabs">
+	  <ul>
+	    <!-- <li><a href="#tabs-1">Nunc tincidunt</a><span class="ui-icon ui-icon-close" role="presentation">移除标签页</span></li>
+	    <li><a href="#tabs-2">Proin dolor</a><span class="ui-icon ui-icon-close" role="presentation">移除标签页</span></li>
+	    <li><a href="#tabs-3">Aenean lacinia</a><span class="ui-icon ui-icon-close" role="presentation">移除标签页</span></li> -->
+	  </ul>
+	  <!-- <div id="tabs-1">
+	  
+	  </div>
+	  <div id="tabs-2">
+	    
+	  </div>
+	  <div id="tabs-3">
+	    
+	  </div> -->
+	</div>
+
+
+
+
+
+ <script type="text/javascript">
+ 	//tabs关闭函数
+	$( "#tabs" ).tabs()
+		.delegate( 
+			"span.ui-icon-close"
+			, "click"
+			, function() {
+			      var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
+			      $( "#" + panelId ).remove();
+			      $( "#tabs" ).tabs().tabs( "refresh" );
+	    });
+	//点击菜单，新增tab函数
+	function addPanel(obj){
+		var id = $(obj).attr('id');
+		var name = $(obj).html();
+		var title = name;
+		var exist = false;
+		var num = 0;
+		$.each($( "#tabs" ).tabs( "widget" ).find("ul:eq(0) li a"), function(i,el){
+		  if($(el).html() == title){
+		      exist = true;
+		      num = i;
+		  }
+		})
+		if(!exist){
+			$('#tabs ul').append(//<a href='+"#tabs-"+id+'>'+name+'</a>scrolling="no" 
+				'<li><a href='+"#tabs-"+id+'>'+name+'</a><span class="ui-icon ui-icon-close" role="presentation">移除标签页</span></li>'
+			);
+			$('#tabs').append(
+				'<div id='+"tabs-"+id+' style="padding:0;"><iframe src="jichuOne.html" width="100%" height="800px" frameborder="no" border="0" marginwidth="0" marginheight="0"  allowTransparency="true"  overflow="hidden"></iframe></div>'
+			);
+
+			$( "#tabs" )
+				.tabs().tabs( "refresh" ).tabs({active:-1});
+		}else{
+			$( "#tabs" )
+				.tabs().tabs({active:num});
+		}
+	}
+var _menu = [{
+	roomStatus:
+		[{
+			'id':'room_status',
+			'name':'房态图'
+		},{
+			'id':'room_open',
+			'name':'开房'
+		},{
+			'id':'add_reception',
+			'name':'加单'
+		},{
+			'id':'exit_room',
+			'name':'退房',
+		},{
+			'id':'continue_room',
+			'name':'续房',
+		},{
+			'id':'change_room',
+			'name':'换房'
+		},{
+			'id':'get_bill',
+			'name':'宾客账单'
+		},{
+			'id':'Entourage',
+			'name':'住客查询添加'
+		},{
+			'id':'createCard',
+			'name':'制卡销卡'
+		}],
+	scheduled:
+		[{
+			'id':'scheduled_new',
+			'name':'预订新建'
+		},{
+			'id':'scheduled_edit',
+			'name':'有效预订管理'
+		},{
+			'id':'scheduled_inquire',
+			'name':'历史预订查询'
+		},{
+			'id':'scheduled_diagram',
+			'name':'预订态势图'
+		}],
+	guestInfo:
+		[{
+			'id':'living_guest',
+			'name':'在住宾客'
+		},{
+			'id':'arrival_guest',
+			'name':'预抵宾客'
+		},{
+			'id':'expected_leave_guest',
+			'name':'预离宾客'
+		},{
+			'id':'early_warning_guest',
+			'name':'宾客失约预警'
+		},{
+			'id':'guest_arlywarning_shouldleavehotel',
+			'name':'宾客应离店预警'
+		},{
+			'id':'guest_warning_deposit',
+			'name':'宾客押金预警'
+		},{
+			'id':'history_guest',
+			'name':'宾客住宿历史'
+		}],
+	menuidrelationcustom:
+		[{
+			'id':'guest_file',
+			'name':'宾客档案'
+		},{
+			'id':'client_memberRecharge',
+			'name':'会员充值'
+		},{
+			'id':'client_SearchVipAndStoredValue',
+			'name':'会员和储值管理'
+		},{
+			'id':'source_group',
+			'name':'客源组管理'
+		},{
+			'id':'guest_manage',
+			'name':'客源基础管理'
+		},{
+			'id':'client_guestHighLevel_manage',
+			'name':'客源高级管理'
+		}],
+	onduty:
+			[{
+				'id':'accept_onduty',
+				'name':'开班和接款'
+			},{
+				'id':'onstatus_onduty',
+				'name':'当班记录'
+			},{
+				'id':'audit_onduty',
+				'name':'审核'
+			}],
+	transaction:
+			[{
+				'id':'guestUnBill_inquire',
+				'name':'宾客未结账单'
+			},{
+				'id':'newGetBill_getBill',
+				'name':'宾客已结账单'
+			},{
+				'id':'accountant_balanceOfReceivablesFromCustomers',
+				'name':'客源应收款余额统计'
+			},{
+				'id':'accountant_customerReceivableManagement',
+				'name':'客源应收款管理'
+			},{
+				'id':'accountant_receivablesReceivablesEntryList',
+				'name':'客源应收款收款录入和列表'
+			}],
+	stock:
+			[{
+				'id':'stock_inventory',
+				'name':'库存'
+			},{
+				'id':'stock_check',
+				'name':'盘点'
+			},{
+				'id':'stock_checkReport',
+				'name':'盘点报告'
+			},{
+				'id':'stock_in',
+				'name':'入库'
+			},{
+				'id':'stock_inReport',
+				'name':'入库报告'
+			},{
+				'id':'stock_out',
+				'name':'出库'
+			},{
+				'id':'stock_outReport',
+				'name':'出库报告'
+			},{
+				'id':'stock_transfer',
+				'name':'调拨'
+			},{
+				'id':'stock_transferReport',
+				'name':'调拨报告'
+			}]
+	 }];
+ 	
+ 	var ReportForm=[{   
+    "id":999,   
+    "text":"日报",     
+    "children":[{
+					'id':'reportDay_openRoomDetails',
+					'text':'开房明细日报'
+				},{
+					'id':'reportDay_changeRoomDetails',
+					'text':'换房明细日报'
+				},{
+					'id':'reportDay_continueRoomDetails',
+					'text':'续房明细日报'
+				},{
+					'id':'reportDay_checkOutRoomDetails',
+					'text':'退房明细日报'
+				},{
+					'id':'reportDay_guestConsumptionDetails',
+					'text':'宾客消费明细日报'
+				},{
+					'id':'reportDay_goodsConsumptionDetails',
+					'text':'商品消费明细日报'
+				},{
+					'id':'reportDay_serviceConsumptionDetails',
+					'text':'服务消费明细日报'
+				},{
+					'id':'reportDay_receiveRefundDetails',
+					'text':'收退款明细日报'
+				},{
+					'id':'reportDay_guestBillDetails',
+					'text':'宾客结账明细日报'
+				},{
+					'id':'reportDay_membersStoredValueDetails',
+					'text':'会员储值明细日报'
+				},{
+					'id':'reportDay_receivablesDetails',
+					'text':'应收款明细日报'
+				},{
+					'id':'reportDay_receivablesCollectionDetails',
+					'text':'应收款收款明细日报'
+				},{
+					"id":"reportDay_memberDevelopmentDetails",
+					"text":"会员发展明细日报"
+				},{
+					"id":"reportDay_memberClosingDetails",
+					"text":"会员结账明细日报"
+				}]   
+	},{   
+	"id":998,  
+    "text":"汇总"  
+    ,"children":[{
+					'id':'summary_guestCheckout',
+					'text':'宾客结账汇总表'
+				},{
+					'id':'summary_collection',
+					'text':'收款汇总表'
+				},{
+					'id':'summary_guestConsumption',
+					'text':'宾客消费汇总表'
+				},{
+					'id':'summary_roomConsumption',
+					'text':'房间消费汇总表'
+				},{
+					'id':'summary_goodsConsumption',
+					'text':'商品消费汇总表'
+				},{
+					'id':'summary_serviceConsumption',
+					'text':'服务消费汇总表'
+				},{
+					'id':'summary_membershipValue',
+					'text':'会员储值汇总表'
+				},{
+					'id':'summary_shouldCollection',
+					'text':'应收款汇总表'
+				},{
+					'id':'summary_collectionOfReceivables',
+					'text':'应收款收款汇总表'
+				},{
+					'id':'summary_memberDevelopment',
+					'text':'会员发展汇总表'
+				},{
+					'id':'summary_memberClosing',
+					'text':'会员结账汇总表'
+				}]   
+	},{   
+	"id":997,  
+    "text":"分析"  
+    ,"children":[{
+				'id':'analysis_specificRoomConsumption',
+				'text':'特定房型消费分析'
+			},{
+				'id':'analysis_specificGoodsConsumption',
+				'text':'特定商品消费分析'
+			},{
+				'id':'analysis_specificServiceConsumption',
+				'text':'特定服务消费分析'
+			},{
+				'id':'analysis_specificChannelConsumption',
+				'text':'特定客源消费分析'
+			},{
+				'id':'analysis_RFMOfGuestConsumption',
+				'text':'宾客消费RFM分析'
+			},{
+				'id':'analysis_RFMOfMemberConsumption',
+				'text':'会员消费RFM分析'
+			},{
+				'id':'analysis_accountManagerPerformance',
+				'text':'客户经理业绩分析'
+			},{
+				'id':'analysis_customerValueManager',
+				'text':'客户经理储值分析'
+			},{
+				'id':'analysis_accountsReceivableCollection',
+				'text':'客户经理应收款收款分析'
+			},{
+				'id':'analysis_memberDevelopment',
+				'text':'会员发展分析'
+			}]   
+	}];
+//--------------------------------------------------
+var chmenutest=[{   
+    "id":1,   
+    "text":"物业设置",     
+    "children":[{
+				'id':'hotel_info_manage',
+				'text':'酒店基本信息'
+			},{
+				'id':'set_floor',
+				'text':'房间位置设置'
+			},{
+				'id':'room_type_list',
+				'text':'房型管理'
+			},{
+				'id':'room_list',
+				'text':'房间管理'
+			}]   
+	},{   
+	"id":3,  
+    "text":"房价设置"  
+    ,"children":[{
+					'id':'set_weekend_holiday',
+					'text':'周末节假设置'
+				},{
+					'id':'room_price_plan',
+					'text':'房价方案管理'
+				},{
+					'id':'room_price_manage',
+					'text':'房价管理'
+				}]   
+	},{   
+	"id":99,  
+    "text":"库/商品/服务设置"  
+    ,"children":[{
+				'id':'set_warehouse',
+				'text':'库管理'
+			},{
+				'id':'supplier',
+				'text':'供应商管理'
+			},{
+				'id':'goods_type_list',
+				'text':'商品类别管理'
+			},{
+				'id':'goods_list',
+				'text':'商品管理'
+			},{
+				'id':'server_type_list',
+				'text':'服务类别管理'
+			},{
+				'id':'server_list',
+				'text':'服务管理'
+			}]   
+	},{   
+	"id":98,  
+    "text":"账号管理"  
+    ,"children":[{
+				'id':'user_group',
+				'text':'用户组管理'
+			},{
+				'id':'permision_manager',
+				'text':'权限管理'
+			},{
+				'id':'employee_manage',
+				'text':'用户管理'
+			}]   
+	},{
+		"id":'set_rule',
+		"text":'规则设置',
+		"data":"",
+		"controller":"syspara"
+	}];
+	var newmenu ;
+	var num = 0;
+	$.each(_menu,function(i,item){
+		$.each(item,function(j,m){
+			newmenu = "";
+			num++;
+			newmenu = "<ul id='mc"+num+"' class='dropdown-menu'>"
+			$.each(m,function(x,y){
+				newmenu += "<li ><a  id='"+y.id+"' onclick='addPanel(this)'>" + y.name + "</a></li>";
+			})
+			newmenu += "</ul>";
+			$("#menu-li-"+num)
+				.append($(newmenu))
+				.mouseenter(function(event) {
+					$(this).addClass('open')
+				})
+				.mouseleave(function(event) {
+					$(this).removeClass('open')
+				});
+		})
+	});
+		$("#menu-li-8")
+				.mouseenter(function(event) {
+					$(this).addClass('open')
+				})
+				.mouseleave(function(event) {
+					$(this).removeClass('open')
+				});
+		$("#menu-li-9")
+				.mouseenter(function(event) {
+					$(this).addClass('open')
+				})
+				.mouseleave(function(event) {
+					$(this).removeClass('open')
+				});
+
+	/*报表*/
+	var newmenuchild= "";
+	newmenuchild += '<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">';
+	$.each(ReportForm,function(j,menutmp){
+		if(menutmp.hasOwnProperty("children")){
+			newmenuchild += '<li class="dropdown-submenu"> <a tabindex="-1" >' + menutmp.text + "</a><ul class='dropdown-menu'>";
+			var menuchtmpchild=menutmp.children;
+			$.each(menuchtmpchild,function(i,menuchtmp){
+		        newmenuchild += '<li><a tabindex="-1" id="'+menuchtmp.id+'" onclick="addPanel(this)">'+menuchtmp.text+'</a></li>';    
+			});
+			newmenuchild += "</ul></li>";
+		}else{
+			newmenuchild += '<li class="dropdown-submenu"><a tabindex="-1" id="'+menutmp.id+'" onclick="addPanel(this)">' + menutmp.text + "</a></li>";
+		}
+	});
+	newmenuchild += "</ul>";
+	$('#menu-li-8').append(newmenuchild);
+
+	/*设置*/
+	var _newmenuchild= "";
+	_newmenuchild += '<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">';
+	$.each(chmenutest,function(j,menutmp){
+		if(menutmp.hasOwnProperty("children")){
+			_newmenuchild += '<li class="dropdown-submenu"> <a tabindex="-1" >' + menutmp.text + "</a><ul class='dropdown-menu'>";
+			var menuchtmpchild=menutmp.children;
+			$.each(menuchtmpchild,function(i,menuchtmp){
+		        _newmenuchild += '<li><a tabindex="-1" id="'+menuchtmp.id+'" onclick="addPanel(this)">'+menuchtmp.text+'</a></li>';    
+			});
+			_newmenuchild += "</ul></li>";
+		}else{
+			_newmenuchild += '<li class="dropdown-submenu1"><a tabindex="-1" id="'+menutmp.id+'" onclick="addPanel(this)">' + menutmp.text + "</a></li>";
+		}
+	});
+	_newmenuchild += "</ul>";
+	$('#menu-li-9').append(_newmenuchild);
+	$('.dropdown-submenu:after').css('display','none');
+
+	
+	</script>
+</body>
+</html>
